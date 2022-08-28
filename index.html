@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laundry form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <form   action="https://formspree.io/f/mwkzpaee"
+  method="POST" enctype="multipart/form-data">
+            <fieldset class="form-group">
+                <legend>Customer Info:</legend>
+                <div class="form-group">
+                    <label class="form-control-label" for="">First Name:</label>
+                    <input class="form-control" type="text" name="FirstName" placeholder="Enter Your First Name">
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="">Last Name:</label class="form-control-label">
+                    <input class="form-control" type="text" name="LastName" placeholder="Enter Your Last Name">
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="">Date</label class="form-control-label">
+                    <input class="form-control" type="datetime-local" name="Date" placeholder="">
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend>Contact Info:</legend>
+                <div class="form-group">
+                    <label class="form-control-label" for="">Email:</label class="form-control-label">
+                    <input class="form-control" type="email" name="email" id="">
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="">Phone:</label>
+                    <input class="form-control"class="form-control" type="tel" name="Phone" id="">
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend>Address:</legend>
+                <div class="form-group" hidden>
+                    <label class="form-control-label" for="">Country</label class="form-control-label" hidden="true">
+                    <select class="form-control" name="Country" id="">
+                        <option value="selected">Bangladesh</option>
+                        <option value="">India</option>
+                        <option value="">Australia</option>
+                        <option value="">Pakistan</option>
+                        <option value="">Nepal</option>
+                        <option value="">China</option>
+                        <option value="">America</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Proper Area:</label>
+                    <textarea class="form-control" name="Area" id="" cols="" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend>Upload Your Photo:</legend>
+                <div class="form-group">
+                    <input class="form-control-file" type="file" name="upload" id="">
+                </div>
+            </fieldset>
+            <button class="btn btn-primary" onclick="">Submit</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
